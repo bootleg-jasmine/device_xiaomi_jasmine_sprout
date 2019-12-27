@@ -27,8 +27,14 @@ BUILD_TWRP := true
 $(call inherit-product, device/xiaomi/jasmine_sprout/device.mk)
 $(call inherit-product, vendor/xiaomi/MiuiCamera/config.mk)
 
-# Inherit some common bootleggers stuff.
-$(call inherit-product, vendor/bootleggers/config/common_full_phone.mk)
+# Inherit some common Pixel stuff.
+TARGET_GAPPS_ARCH := arm64
+TARGET_BOOT_ANIMATION_RES := 1080
+REVENGEOS_BUILDTYPE := OFFICIAL
+
+# Inherit some common revengeos stuff.
+$(call inherit-product, vendor/revengeos/config/common.mk)
+
 # Define first api level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
@@ -41,6 +47,6 @@ BUILD_FINGERPRINT := xiaomi/jasmine/jasmine_sprout:9/PKQ1.180904.001/V10.0.18.0.
 PRODUCT_BRAND := xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_PLATFORM := SDM660
-PRODUCT_NAME := bootleg_jasmine_sprout
+PRODUCT_NAME := revengeos_jasmine_sprout
 PRODUCT_DEVICE := jasmine_sprout
 PRODUCT_MODEL := Mi A2

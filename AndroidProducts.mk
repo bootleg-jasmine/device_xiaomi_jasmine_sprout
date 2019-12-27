@@ -23,9 +23,9 @@
 
 # inherit MI A2 lineage device config
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/bootleg_jasmine_sprout.mk
+    $(LOCAL_DIR)/revengeos_jasmine_sprout.mk
 
 COMMON_LUNCH_CHOICES := \
-    bootleg_jasmine_sprout-eng \
-    bootleg_jasmine_sprout-userdebug \
-		bootleg_jasmine_sprout-eng
+    revengeos_jasmine_sprout-eng \
+    revengeos_jasmine_sprout-userdebug \
+		revengeos_jasmine_sprout-eng
