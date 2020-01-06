@@ -25,7 +25,6 @@ BUILD_TWRP := true
 
 # Inherit device configuration
 $(call inherit-product, device/xiaomi/jasmine_sprout/device.mk)
-$(call inherit-product, vendor/xiaomi/MiuiCamera/config.mk)
 
 # Inherit some common Pixel stuff.
 TARGET_GAPPS_ARCH := arm64
