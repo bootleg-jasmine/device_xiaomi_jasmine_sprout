@@ -40,9 +40,9 @@ PRODUCT_MODEL := Mi A2
 
 # Build Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
-	PRIVATE_BUILD_DESC="xiaomi/jasmine/jasmine_sprout:9/PKQ1.180904.001/V10.0.18.0.PDIMIXM:user/release-keys"
+	PRIVATE_BUILD_DESC="xiaomi/jasmine/jasmine_sprout:10/QKQ1.190910.002/V11.0.5.0.QDIMIXM:user/release-keys"
 
-BUILD_FINGERPRINT := xiaomi/jasmine/jasmine_sprout:9/PKQ1.180904.001/V10.0.18.0.PDIMIXM:user/release-keys
+BUILD_FINGERPRINT := xiaomi/jasmine/jasmine_sprout:10/QKQ1.190910.002/V11.0.5.0.QDIMIXM:user/release-keys
 
 #TWRP
 BUILD_TWRP := true
