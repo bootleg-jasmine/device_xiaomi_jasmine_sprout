@@ -27,14 +27,19 @@ $(call inherit-product, device/xiaomi/jasmine_sprout/device.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
 # Inherit some common RevengeOS stuff.
-$(call inherit-product, vendor/revengeos/config/common.mk)
-TARGET_BOOT_ANIMATION_RES := 1080
-REVENGEOS_BUILDTYPE := OFFICIAL
+$(call inherit-product, vendor/pixeldust/configs/pixeldust_phone.mk)
 
+# Include optional stuff (e.g. prebuilt apps)
+include vendor/pixeldust/configs/system_optional.mk
+
+# Google Apps
+include vendor/pixelgapps/pixel-gapps.mk
+
+TARGET_BOOT_ANIMATION_RES := 1080
 # Device identifier
 PRODUCT_BRAND := xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := revengeos_jasmine_sprout
+PRODUCT_NAME := pixeldust_jasmine_sprout
 PRODUCT_DEVICE := jasmine_sprout
 PRODUCT_MODEL := Mi A2
 
