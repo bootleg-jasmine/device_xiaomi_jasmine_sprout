@@ -23,9 +23,8 @@
 
 # inherit MI A2 lineage device config
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/revengeos_jasmine_sprout.mk
+    $(LOCAL_DIR)/du.mk
 
 COMMON_LUNCH_CHOICES := \
-    revengeos_jasmine_sprout-eng \
-    revengeos_jasmine_sprout-userdebug \
-		revengeos_jasmine_sprout-eng
+    du_jasmine_sprout-userdebug \
+ 

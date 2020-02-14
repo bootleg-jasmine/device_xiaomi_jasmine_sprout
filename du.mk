@@ -26,15 +26,15 @@ $(call inherit-product, device/xiaomi/jasmine_sprout/device.mk)
 # Define first api level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
-# Inherit some common RevengeOS stuff.
-$(call inherit-product, vendor/revengeos/config/common.mk)
+# Inherit some common DU stuff.
+$(call inherit-product, vendor/du/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
-REVENGEOS_BUILDTYPE := OFFICIAL
+
 
 # Device identifier
 PRODUCT_BRAND := xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := revengeos_jasmine_sprout
+PRODUCT_NAME := du_jasmine_sprout
 PRODUCT_DEVICE := jasmine_sprout
 PRODUCT_MODEL := Mi A2
 
