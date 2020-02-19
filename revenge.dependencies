@@ -1,15 +1,15 @@
 [
   {
     "remote":      "github",
-    "repository":  "xiaomi-sdm660/android_device_xiaomi_sdm660-common",
+    "repository":  "my-jasmine/device_xiaomi_sdm660-common",
     "target_path": "device/xiaomi/sdm660-common",
-    "branch":      "havoc"
+    "branch":      "revenge"
   },
   {
     "remote":      "github",
-    "repository":  "xiaomi-sdm660/android_kernel_xiaomi_sdm660",
+    "repository":  "my-jasmine/kernel_xiaomi_sdm660.git",
     "target_path": "kernel/xiaomi/sdm660",
-    "branch":      "kernel.lnx.4.4.r34-rel"
+    "branch":      "revenge"
   },
   {
     "remote":      "github",
